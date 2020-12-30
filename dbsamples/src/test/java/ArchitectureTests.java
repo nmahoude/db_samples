@@ -12,7 +12,11 @@ public class ArchitectureTests {
   static final ArchRule onion_architecture_is_respected = onionArchitecture()
   				.applicationServices("..application..")
           .domainModels("..domain.models..")
-          .domainServices("..domain.boundary..", "..domain.services")
+          .domainServices(
+          		/*primary*/
+          		"..domain.boundary..", 
+          		/*secondary*/
+          		"..domain.services..") 
           .adapter("externalServices", "..infrastructure..")
           ;
 	
