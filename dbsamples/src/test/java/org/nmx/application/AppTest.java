@@ -1,4 +1,4 @@
-package org.nmx;
+package org.nmx.application;
 
 import static org.junit.Assert.assertTrue;
 

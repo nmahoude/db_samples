@@ -1,6 +1,7 @@
-package org.nmx.domain;
+package org.nmx.domain.services;
 
-import org.nmx.domain.services.CustomerRepository;
+import org.nmx.domain.Address;
+import org.nmx.domain.Customer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +44,7 @@ public class DemoService {
     	}
     	return null;
     });
-
+    log.info("");
     
     
     
