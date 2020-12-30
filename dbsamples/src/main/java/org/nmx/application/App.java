@@ -1,7 +1,7 @@
 package org.nmx.application;
 
 
-import org.nmx.domain.services.DemoService;
+import org.nmx.domain.boundary.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

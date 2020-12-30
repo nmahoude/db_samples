@@ -1,4 +1,4 @@
-package org.nmx.domain;
+package org.nmx.domain.models;
 
 import javax.persistence.Embeddable;
 

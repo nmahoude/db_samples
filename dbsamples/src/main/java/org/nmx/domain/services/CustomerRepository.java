@@ -2,7 +2,7 @@ package org.nmx.domain.services;
 
 import java.util.List;
 
-import org.nmx.domain.Customer;
+import org.nmx.domain.models.Customer;
 
 public interface CustomerRepository {
 	  List<Customer> findByLastName(String lastName);

@@ -1,7 +1,8 @@
-package org.nmx.domain.services;
+package org.nmx.domain.boundary;
 
-import org.nmx.domain.Address;
-import org.nmx.domain.Customer;
+import org.nmx.domain.models.Address;
+import org.nmx.domain.models.Customer;
+import org.nmx.domain.services.CustomerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
