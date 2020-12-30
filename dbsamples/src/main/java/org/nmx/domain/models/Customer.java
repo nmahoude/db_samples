@@ -1,14 +1,6 @@
 package org.nmx.domain.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
 public class Customer {
-	@Id
-  @GeneratedValue(strategy=GenerationType.AUTO)
   private Long id;
   private String firstName;
   private String lastName;
@@ -18,11 +10,16 @@ public class Customer {
   protected Customer() {}
 
   public Customer(String firstName, String lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+  	this(null, firstName, lastName);
   }
 
-  @Override
+  public Customer(Long id, String firstName, String lastName) {
+  	this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+	}
+
+	@Override
   public String toString() {
     return String.format(
         "Customer[id=%d, firstName='%s', lastName='%s', adresse='%s']",
@@ -43,5 +40,9 @@ public class Customer {
 
 	public void setAddress(Address address) {
 		this.address = address;
+	}
+
+	public Address getAddress() {
+		return address;
 	}
 }

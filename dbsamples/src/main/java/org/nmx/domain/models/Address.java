@@ -1,17 +1,14 @@
 package org.nmx.domain.models;
 
-import javax.persistence.Embeddable;
-
 /**
  * simple VO to map in jpa
  * 
- * embeddable, so it is saved in the same db row
- * aka denormalisation
+ * -- embeddable, so it is saved in the same db row
+ * -- aka denormalisation
  * 
  * @author nmahoude
  *
  */
-@Embeddable
 public class Address {
 	public final String street;
 	public final String city;
