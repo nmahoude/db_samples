@@ -13,6 +13,8 @@ public class Customer {
   private String firstName;
   private String lastName;
 
+  private Address address;
+  
   protected Customer() {}
 
   public Customer(String firstName, String lastName) {
@@ -23,8 +25,8 @@ public class Customer {
   @Override
   public String toString() {
     return String.format(
-        "Customer[id=%d, firstName='%s', lastName='%s']",
-        id, firstName, lastName);
+        "Customer[id=%d, firstName='%s', lastName='%s', adresse='%s']",
+        id, firstName, lastName, address);
   }
 
   public Long getId() {
@@ -38,4 +40,8 @@ public class Customer {
   public String getLastName() {
     return lastName;
   }
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 }
